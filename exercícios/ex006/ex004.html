@@ -10,7 +10,14 @@
     
     <script>
         var nome = window.prompt('qual é o seu nome?')
-        document.write('seu nome tem ${nome.length}letras')
+        document.write('seu nome tem ' + nome.length +' letras')
+       /* document.write('seu nome tem ${nome.length} letras')
+         era para ser assim mas por algum motivo n estava fucionando*/
+       
+         // olá vim do futuro para dizer que descobri o motivo ,eu acho.
+         // bem isso não ´´e um arquivo java script acho q foi por isso que não fucionou
+         //mas fuciona em um arquivo  js ent deve ter sido isso 
+         document.write('seu nome tem  &{nome.length}  letras')
     </script>
 </body>
 </html>
